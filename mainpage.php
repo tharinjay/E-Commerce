@@ -20,7 +20,10 @@ $displayText = $_SESSION["user_fname"];
 
 <body>
    <header>
-    <h2>Welcome <?php echo $displayText; ?></h2>
+   <?php if (isset($displayText) && !empty($displayText)): ?>
+    <h2>Welcome <?php echo htmlspecialchars($displayText); ?></h2>
+    <?php endif; ?> 
+   <!-- <h2>Welcome <?php echo $displayText; ?></h2> -->
     <div class="header-main">
 
       <div class="container">

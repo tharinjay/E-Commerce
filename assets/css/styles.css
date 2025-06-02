@@ -1,8 +1,3 @@
-h2 {
-  color: red;
-  text-align: center;
-}
-
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -2148,7 +2143,7 @@ footer {
 
   .product-featured .countdown-content { padding: 5px 10px; }
 
-  .product-grid { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); }
+  /* .product-grid { -ms-grid-columns: (1fr)[3]; grid-template-columns: repeat(3, 1fr); } */
   .testimonials-box {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2216,7 +2211,7 @@ footer {
 
   .product-featured .display-number { --fs-5: 1.125rem; }
 
-  .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); }
+  /* .product-grid { -ms-grid-columns: (1fr)[4]; grid-template-columns: repeat(4, 1fr); } */
 
   .testimonial, .service {
     min-width: -webkit-calc(25% - 20px);

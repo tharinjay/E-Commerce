@@ -20,7 +20,7 @@
             $_SESSION["user_fname"] = $row["Fname"];
 
             echo "<script>alert('Login Successful');
-            location.replace('page.php');</script>";
+            location.replace('mainpage.php');</script>";
             
         }else{
             echo "<script>alert('Login Failed');</script>";
