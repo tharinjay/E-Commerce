@@ -7,7 +7,7 @@
     $password = $_POST["txt_password"];
 
     //Designing SQL Query Format
-    $sql = "SELECT * FROM users WHERE username = '$username'";
+    $sql = "SELECT * FROM users WHERE Username = '$username'";
     $result = $con->query($sql);
     if($result->num_rows>0){
       while($row = $result->fetch_assoc()){
@@ -16,7 +16,7 @@
 
         if($db_un == $username && $db_pw == $password){
             
-            $_SESSION["user_id"] = $row["Uid"];
+            $_SESSION["user_id"] = $row["id"];
             $_SESSION["user_fname"] = $row["Fname"];
 
             echo "<script>alert('Login Successful');
@@ -27,7 +27,7 @@
         }
       }
     }else{
-      echo "<script>alert('User not exist')</script>";
+      echo "<script>alert('User does not exist')</script>";
     }
   }
 ?>

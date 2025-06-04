@@ -1,7 +1,6 @@
 <?php
   require "database.php";
 
-
   //Checking for the button Click
   if(isset($_POST["signup-btn"])){
 
@@ -16,7 +15,7 @@
     $contact = $_POST["contactno"];
 
     //Defining a SQL Insert Query Format
-    $sql = "INSERT INTO Users(Fname,Lname,Age,Gender,Email,ContactNo,Username,Password)VALUES('$fname','$lname',$age,'$gender','$email','$contact','$username','$password');";
+    $sql = "INSERT INTO users(Fname,Lname,Age,Gender,Email,ContactNo,Username,Password)VALUES('$fname','$lname',$age,'$gender','$email','$contact','$username','$password');";
 
     //Run this Query Format as an SQL Query
     $result = $con->query($sql);

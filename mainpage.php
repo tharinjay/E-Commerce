@@ -3,7 +3,7 @@ session_start();
 require "database.php";
 $displayText = "Null";
 
-$displayText = $_SESSION["user_fname"];
+$displayText = $_SESSION["user_fname"] ?? null;
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +23,7 @@ $displayText = $_SESSION["user_fname"];
    <?php if (isset($displayText) && !empty($displayText)): ?>
     <h2>Welcome <?php echo htmlspecialchars($displayText); ?></h2>
     <?php endif; ?> 
-   <!-- <h2>Welcome <?php echo $displayText; ?></h2> -->
+    
     <div class="header-main">
 
       <div class="container">
